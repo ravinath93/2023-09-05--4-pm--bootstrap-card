@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap file linking -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+     <!-- custome css --> 
+    <style>
+   .card-header {
+   border-bottom-width: 10px;
+   border-color: rgb(110, 226, 43);
+   }
+
+   /* .card-text area එක පහලට push කරලා buttons same level ගන්නේ මේකෙන් .card-body එක flex column එකක් කරන්න ඕනි  ...   */
+   .card-body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   }
+
+   /* .card-text area එක පහලට push කරලා buttons same level ගන්නේ flex-grow: 1; මේකෙන් */
+   .card-text{
+   flex-grow: 1;
+   }
+
+    </style>
+    
+
+    <title>Pricing Card</title>
+  </head>
+
+  <!-- body -->
+  <body>
+    
+    <!-- section -->
+  <section id="pricing" class="bg-warning mt-5 pb-5">
+
+   <!-- container-lg වලට පහල screen වල 100% පෙන්නන්න කියල කියන්නේ  -->
+   <div class="container-lg">
+
+      <!-- heading -->
+      <div class="text-center">
+         <h2>Pricing Plan</h2>
+         <p>Choose a pricing plan to suit you.</p>
+      </div>
+
+       <!-- cards row ,  g-5 යනු card අතර gap එක අවශ්‍ය විදිහට gx-5 ද gy-5 ද කියල බලල දාගන්න ..-->
+       <div class="row my-5 justify-content-center align-content-center g-5">
+
+         <!-- cards-1 -->
+         <div class="col-8 col-lg-4 col-xl-3">
+            <!-- h-100 දාගෙන යන්න ඔක්කොම card වලට , නැත්නම් ඔක්කොම card same height වෙන එකක් නැහැ  -->
+            <div class="card border-0 h-100">
+               <div class="card-body text-center py-4">
+                    <h4 class="card-title">Starter Edition</h4>
+                    <p class=" card-subtitle lead">eBook Download Only</p>
+                    <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                    <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+               </div>
+            </div>            
+         </div>
+
+         <!-- cards-2 -->
+         <!-- මේක Most Popular card නිසා වෙනසක් කලා ,මේ card එකේ col එක 9 , col-xl-3 එක remove කරලා තව card-header එකක් add කලා Most Popular කියල , තව card border-2 border-primary කලා ..  -->
+         <div class="col-9 col-lg-4 ">
+            <div class="card border-2 border-primary h-100">
+               <div class="card-header text-center text-primary"> Most Popular</div>
+               <div class="card-body text-center py-4">
+                    <h4 class="card-title">Complete Edition</h4>
+                    <p class=" card-subtitle lead">eBook Download Only</p>
+                    <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
+                    <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+               </div>
+            </div>
+         </div>
+
+
+         <!-- cards-3 -->
+         <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0 h-100">
+               <div class="card-body text-center py-4 ">
+                    <h4 class="card-title">Starter Edition</h4>
+                    <p class=" card-subtitle lead">eBook Download Only</p>
+                    <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                    <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+               </div>
+            </div>            
+         </div>
+         
+         
+      </div>     
+   </div>
+  </section>
+          
+    
+  </body>
+</html>
